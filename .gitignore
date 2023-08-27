@@ -24,6 +24,7 @@ Desktop.ini
 .vscode/
 *.sublime-project
 *.sublime-workspace
+.obsidian
 
 # Temporary files
 *.bak

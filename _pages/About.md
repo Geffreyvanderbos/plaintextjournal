@@ -4,24 +4,22 @@ title: About
 id: about
 permalink: /about
 ---
+### About Geffrey's Music Tech Directory
 
-## About the Music Tech Directory for Artists
-Welcome to the Music Tech Directory for Artists, your go-to open-source resource for navigating the world of music technology. Whether you're a musician, producer, or any other kind of artist, our aim is to provide you with a curated list of tools, software, and projects that can help you excel in your craft.
+Geffrey's Music Tech Directory is an open list of music technology designed to aid artists in production, distribution, and monetization.
+#### Why This Directory?
 
-## Why This Directory?
-The field of music technology is vast and ever-changing. New tools and platforms are constantly being developed, each with the potential to revolutionize the way artists create, distribute, and promote their work. However, it can be overwhelming to sift through the plethora of options available. This directory simplifies that process by offering a curated selection of resources that are beneficial to artists.
+Navigating the ever-evolving landscape of music technology can be overwhelming. This directory simplifies your search by curating essential tools and resources that empower artists.
+#### What's Listed?
 
-## What You'll Find Here
-- Software Tools: From recording and editing to distribution platforms, discover the software that can streamline your workflow.
-- Educational Resources: Access tutorials, guides, and courses that demystify the technical aspects of music production and promotion.
-- Community Projects: Learn about initiatives and collaborations that are making waves in the music tech industry.
-- Hardware: Explore the gadgets and equipment that can elevate your artistry.
-Open Source and Community-Driven
+- **Software Tools**: Streamline your workflow with top-notch recording and distribution platforms.
+- **Software Services (SaaS)**: Explore reliable Software-as-a-Service solutions for artists.
+- **Educational Resources**: Access easy-to-understand tutorials and guides.
+- **Community Projects**: Discover initiatives shaping the music tech industry.
+- **Hardware**: Find gadgets that elevate your artistry.
+#### Open Source and Community-Driven
 
-While the projects listed here may vary in their licensing, the directory itself is open source. We believe in the collective power of the community to contribute, refine, and expand this resource.
+The directory is open source, and I welcome community contributions.
+#### Contribute
 
-## How to Contribute
-Your input can make this directory even better. If you know of a project, tool, or resource that should be included, you can contribute by submitting a pull request to our GitHub repository. All submissions are reviewed to ensure they meet our guidelines for inclusion. Or, contact me directly on music-directory@geff.re.
-
-## Contact
-For questions, suggestions, or feedback, please contact me.
+Enhance this directory by submitting a pull request on [GitHub](https://github.com/Geffreyvanderbos/geffre) or contact me at [music-directory@geff.re](mailto:music-directory@geff.re).
