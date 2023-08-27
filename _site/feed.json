@@ -1,0 +1,62 @@
+
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Geffrey’s Music Tech Directory",
+    
+    "home_page_url": "http://localhost:4000/",
+    "feed_url": "http://localhost:4000/feed.json",
+    "expired": false,
+    "items": [
+
+        {
+            "id": "/audius",
+            "title": "Audius",
+            "content_html": "\n",
+            "url": "http://localhost:4000/audius",
+            "summary": "",
+            "date_published": "2018-01-01 00:00:00 +0100"
+            
+        },
+
+        {
+            "id": "/cryptovoxels",
+            "title": "CryptoVoxels",
+            "content_html": "\n",
+            "url": "http://localhost:4000/cryptovoxels",
+            "summary": "",
+            "date_published": "2018-06-01 00:00:00 +0200"
+            
+        },
+
+        {
+            "id": "/zora",
+            "title": "Zora",
+            "content_html": "<h2 id=\"what-is-zora\">What is Zora?</h2>\n<p>Zora is a space for creators and collectors to enjoy Ethereum and the opportunities it creates. Zora offers a toolkit to have your artwork, songs, videos, podcasts, animations, or memes turned into NFT collections. It is not just for the creator; we are for the collector, too, with access to personalizable profiles and the ability to explore our home feed to scroll through live and mintable collections from the Zora community.</p>\n",
+            "url": "http://localhost:4000/zora",
+            "summary": "<h2 id=\"what-is-zora\">What is Zora?</h2>\n<p>Zora is a space for creators and collectors to enjoy Ethereum and the opportunities it creates. Zora offers a toolkit to have your artwork, songs, videos, podcasts, animations, or memes turned into NFT collections. It is not just for the creator; we are for the collector, too, with access to personalizable profiles and the ability to explore our home feed to scroll through live and mintable collections from the Zora community.</p>",
+            "date_published": "2020-02-01 00:00:00 +0100"
+            
+        },
+
+        {
+            "id": "/async-art",
+            "title": "Async Art",
+            "content_html": "\n",
+            "url": "http://localhost:4000/async-art",
+            "summary": "",
+            "date_published": "2020-02-25 00:00:00 +0100"
+            
+        },
+
+        {
+            "id": "/catalog",
+            "title": "Catalog",
+            "content_html": "<h2 id=\"a-new-medium-for-music\">A new medium for music</h2>\n<p>Catalog was founded on the principle that music is valuable. We’re a digital record shop and music community for artists, listeners, and collectors. We’re here to actualize a new onchain music system that provides artists with the autonomy and earnings they deserve.</p>\n",
+            "url": "http://localhost:4000/catalog",
+            "summary": "<h2 id=\"a-new-medium-for-music\">A new medium for music</h2>\n<p>Catalog was founded on the principle that music is valuable. We’re a digital record shop and music community for artists, listeners, and collectors. We’re here to actualize a new onchain music system that provides artists with the autonomy and earnings they deserve.</p>",
+            "date_published": "2021-02-01 00:00:00 +0100"
+            
+        }
+
+    ]
+}
