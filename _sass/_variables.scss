@@ -12,42 +12,20 @@
 
 :root {
   --color-background-primary: #040f13;
-  --color-background-secondary: rgba(255,255,255,0.05);
-  --color-background-hover: hsla(182, 84%, 32%, 0.1);
-  --color-selection: hsla(182, 84%, 32%, 0.1);
+  --color-background-secondary: rgba(4, 15, 19, .6);
+  --color-background-hover: hsla(196, 84%, 32%, 0.1);
+  --color-selection: hsla(196, 84%, 32%, 0.1);
 
   --color-primary: #fff;
 
   --color-muted: rgba(255,255,255,.8);
   --color-faint: rgba(255,255,255,.4);
 
-  --color-action: #1b6c89; 
-  --color-action-muted: hsla(182, 84%, 32%, 0.6);
-  --color-action-faint: hsla(182, 84%, 32%, 0.35);
-
-  --color-outline: rgba(255,255,255,.2);
-  --color-outline-hover: #d8d8d5;
-  --color-outline-active: #c7c7c4;
-
-}
-
-.theme-dark {
-  --color-background-primary: #040f13;
-  --color-background-secondary: rgba(255,255,255,0.05);
-  --color-background-hover: hsla(182, 84%, 32%, 0.1);
-  --color-selection: hsla(182, 84%, 32%, 0.1);
-
-  --color-primary: #fff;
-
-  --color-muted: rgba(255,255,255,.8);
-  --color-faint: rgba(255,255,255,.4);
-  --color-action-muted: hsla(182, 84%, 32%, 0.6);
-  --color-action-faint: hsla(182, 84%, 32%, 0.35);
-
-  --color-action: #1b6c89; 
+  --color-action: hsl(196, 67%, 32%); 
+  --color-action-muted: hsla(196, 84%, 32%, 0.6);
+  --color-action-faint: hsla(196, 84%, 32%, 0.349);
 
   --color-outline: rgba(255,255,255,.2);
   --color-outline-hover: #d8d8d5;
   --color-outline-active: #c7c7c4;
 }
-
