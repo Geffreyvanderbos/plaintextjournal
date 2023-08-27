@@ -5,7 +5,7 @@
  <title>Geffrey's Music Tech Directory</title>
  <link href="http://localhost:4000/rss.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-08-27T10:27:02+02:00</updated>
+ <updated>2023-08-27T12:05:05+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -253,6 +253,26 @@
    <id>http://localhost:4000/catalog</id>
    <content type="html">&lt;h2 id=&quot;a-new-medium-for-music&quot;&gt;A new medium for music&lt;/h2&gt;
 &lt;p&gt;Catalog was founded on the principle that music is valuable. We’re a digital record shop and music community for artists, listeners, and collectors. We’re here to actualize a new onchain music system that provides artists with the autonomy and earnings they deserve.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Endlesss Clubs</title>
+   <link href="http://localhost:4000/endlesss-clubs"/>
+   <updated>2023-08-27T00:00:00+02:00</updated>
+   <id>http://localhost:4000/endlesss-clubs</id>
+   <content type="html">&lt;p&gt;Clubs are online spaces for music communities to hang out, create together and publish their best work with people who care. They’re also places for businesses to develop authentic relationships with customers and give back to the community.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Supertone</title>
+   <link href="http://localhost:4000/supertone"/>
+   <updated>2023-08-27T00:00:00+02:00</updated>
+   <id>http://localhost:4000/supertone</id>
+   <content type="html">&lt;p&gt;Supertone’s world’s first singing and acting voice separation and synthesis AI technology is capable of producing hyperrealistic and expressive results. Our proprietary technology is used for the innovation and inspiration of creators around the world.&lt;/p&gt;
+
+&lt;p&gt;Supertone is an AI audio tech startup whose mission is to break the limitations in content creation. We are passionate about innovating the content production landscape through our state-of-the-art technology such as expressive singing/speech synthesis, original voice design, and speech enhancement.&lt;/p&gt;
 </content>
  </entry>
  

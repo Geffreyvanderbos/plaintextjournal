@@ -276,6 +276,26 @@
             "summary": "<h2 id=\"a-new-medium-for-music\">A new medium for music</h2>\n<p>Catalog was founded on the principle that music is valuable. We’re a digital record shop and music community for artists, listeners, and collectors. We’re here to actualize a new onchain music system that provides artists with the autonomy and earnings they deserve.</p>",
             "date_published": "2021-02-01 00:00:00 +0100"
             
+        },
+
+        {
+            "id": "/endlesss-clubs",
+            "title": "Endlesss Clubs",
+            "content_html": "<p>Clubs are online spaces for music communities to hang out, create together and publish their best work with people who care. They’re also places for businesses to develop authentic relationships with customers and give back to the community.</p>\n",
+            "url": "http://localhost:4000/endlesss-clubs",
+            "summary": "<p>Clubs are online spaces for music communities to hang out, create together and publish their best work with people who care. They’re also places for businesses to develop authentic relationships with customers and give back to the community.</p>",
+            "date_published": "2023-08-27 00:00:00 +0200"
+            
+        },
+
+        {
+            "id": "/supertone",
+            "title": "Supertone",
+            "content_html": "<p>Supertone’s world’s first singing and acting voice separation and synthesis AI technology is capable of producing hyperrealistic and expressive results. Our proprietary technology is used for the innovation and inspiration of creators around the world.</p>\n\n<p>Supertone is an AI audio tech startup whose mission is to break the limitations in content creation. We are passionate about innovating the content production landscape through our state-of-the-art technology such as expressive singing/speech synthesis, original voice design, and speech enhancement.</p>\n",
+            "url": "http://localhost:4000/supertone",
+            "summary": "<p>Supertone’s world’s first singing and acting voice separation and synthesis AI technology is capable of producing hyperrealistic and expressive results. Our proprietary technology is used for the innovation and inspiration of creators around the world.</p>",
+            "date_published": "2023-08-27 00:00:00 +0200"
+            
         }
 
     ]
