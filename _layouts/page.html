@@ -7,8 +7,8 @@ layout: default
     <h1>{{ page.title }}</h1>
     <table class="sst" style="max-width:20em">
       <tr>
-        <td class="muted">Founded/Created</td>
-        <td>{{ page.date | date: "%Y-%m-%d" }}</td>
+        <td class="muted">Artist</td>
+        <td>{{ page.artist }}</td>
       </tr>
       <tr>
         <td class="muted pr">Website</td>
@@ -16,7 +16,7 @@ layout: default
       </tr>
       {% if page.tags.size > 0 %}
       <tr>
-        <td class="muted">Tags</td>
+        <td class="muted">Tags</td> 
         <td class="tags">
         {% for tag in page.tags %}
             <a href="/{{ site.tag_page_dir }}/{{ tag | slugify: 'pretty' }}/" class="tag">#{{ tag }}</a>
@@ -24,6 +24,10 @@ layout: default
         </td>
       </tr>
       {% endif %}
+      <tr>
+        <td class="muted">Added</td>
+        <td>{{ page.date | date: "%Y-%m-%d" }}</td>
+      </tr>
     </table>
     <main>
       {{ content }}

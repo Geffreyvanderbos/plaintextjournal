@@ -1,10 +1,11 @@
-name:                "Geffrey's Music Tech Directory"
-title:               "Geffrey's Music Tech Directory"
+name:                "Geffrey van der Bos"
+title:               "Geffrey van der Bos"
 twitter:             
 domain:              geff.re
 url:                 https://geff.re
 include:             ['_pages','_redirects']
-metadescription:     "A curated, open directory of music technology projects and tools designed to help artists with production, distribution, and monetization."
+metadescription:     "Meet Geffrey van der Bos. Digital Product Design,
+Music and Technology"
 
 # You may need to change the base URL depending on your deploy configuration.
 # Specifically, when using GitHub Pages, the baseurl should point to where GitHub
