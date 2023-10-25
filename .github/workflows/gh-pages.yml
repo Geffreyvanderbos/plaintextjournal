@@ -30,3 +30,4 @@ jobs:
           #publish_branch is the branch in the repository.
           #this is where you need to point GitHub pages
           publish_branch: gh-pages
+          cname: geff.re
