@@ -6,9 +6,10 @@ layout: base.njk
 <ul class="no-list-style">
     {%- for note in collections.notes | reverse -%}
     <li>
-        <article>
-            {{ note.content | safe }}
-            <a href="{{ note.url }}">Permalink</a><time>{{ post.data.date }}</time>
+        <article class="h-entry">
+            <h1 class="p-name">{{ note.data.title | safe }}</h1>
+            <div class="e-content">{{ note.content | safe }}</div>
+            <a href="{{ note.url }}">Permalink</a><time class="dt-published">{{ post.data.date }}</time>
         </article>
     </li>
     {% endfor %}
