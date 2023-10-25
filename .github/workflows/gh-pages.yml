@@ -2,7 +2,7 @@ name: Build Eleventy
 on:
   push:
     branches:
-      - gh-pages
+      - main
 
 jobs:
   build:
