@@ -23,12 +23,25 @@ I've spent years crafting user-centric software and guiding teams in developing 
 <ul class="no-list-style">
     {%- for note in collections.notes | reverse -%}
     <li>
+        {%- if note.data.type == "replyto" %}
+            <article class="h-entry">
+                <h2 class="p-name">< Replying to  "{{ note.data.title | safe }}"</h2>
+                <p class="e-content">{{ note.content | safe }}</p>
+                <a class="u-url" href="{{ note.data.replytourl }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
+            </article>
+        <br><br><br>
+        {% elseif note.data.type == "like" -%}
+            <article><p class="e-content"><3 {{ note.data.likeoftitle }} by {{ note.data.likeofuser }}</p></article>
+            <a class="u-like-of" href="{{ note.data.likeof }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
+            <br><br><br>
+        {% else %}
         <article class="h-entry">
-            <h1 class="p-name">=== {{ note.data.title | safe }}</h1>
-            <div class="e-content">{{ note.content | safe }}</div>
+            <h2 class="p-name">=== {{ note.data.title | safe }}</h2>
+            <p class="e-content">{{ note.content | safe }}</p>
             <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
         </article>
         <br><br><br>
+        {% endif -%} 
     </li>
     {% endfor %}
 </ul>
