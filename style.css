@@ -1,7 +1,7 @@
 body {
     margin: 3vw; 
     font-family: 'Courier New', Courier, monospace;
-    line-height: 1.15;
+    line-height: 1.2;
     max-width: 80ch;
     overflow-x: hidden;
 }
@@ -28,9 +28,19 @@ a, a:hover, a:visited {
     color: black;
 }
 
+a[href*="//"]:not([href*="geff.re"])::after {
+    content: "↗";
+    display:inline-block;
+}
+
 a:hover {
     text-decoration: none;
     cursor: default;
+}
+
+.prefix--back-arrow::before {
+    content: "←\00a0";
+    display: inline-block; 
 }
 
 .no-list-style {
