@@ -6,9 +6,9 @@ layout: 'base.njk'
 
         {%- if type == "replyto" %}
             <article class="h-entry">
-                <h2 class="p-name">< Replying to  "{{ title | safe }}"</h2>
+                <h2 class="p-name prefix--reply-to">Replying to "<a class="in-reply-to" href="{{ replyto }}">{{ title | safe }}"</a></h2>
                 <p class="e-content">{{ content | safe }}</p>
-                <a class="u-url in-reply-to" href="{{ replyto }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+                <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
             </article>
         <br><br><br>
         {% elseif type == "like" -%}
