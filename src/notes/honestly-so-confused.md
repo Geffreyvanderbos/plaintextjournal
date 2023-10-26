@@ -1,5 +1,6 @@
 ---
-title: Webmention is very confusing
+title: "Discovery test #1"
+type: replyto
 replyto: https://webmention.rocks/test/1
 ---
 

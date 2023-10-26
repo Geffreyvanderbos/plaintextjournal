@@ -3,9 +3,23 @@ layout: 'base.njk'
 ---
 
 <script src="/assets/webmention.min.js" data-id="webmention-container" async></script>
-<article class="h-entry">
-    <h1 class="p-name">{{ title }}</h1>
-    <div class="e-content">{{ content | safe }}</div>
 
-<div id="webmentions"></div>
-</article>
+        {%- if type == "replyto" %}
+            <article class="h-entry">
+                <h2 class="p-name">< Replying to  "{{ title | safe }}"</h2>
+                <p class="e-content">{{ content | safe }}</p>
+                <a class="u-url in-reply-to" href="{{ replyto }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+            </article>
+        <br><br><br>
+        {% elseif type == "like" -%}
+            <article><p class="e-content"><3 {{ likeoftitle }} by {{ likeofuser }}</p></article>
+            <a class="u-like-of" href="{{ likeof }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+            <br><br><br>
+        {% else %}
+        <article class="h-entry">
+            <h2 class="p-name">=== {{ title | safe }}</h2>
+            <p class="e-content">{{ content | safe }}</p>
+            <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+        </article>
+        <br><br><br>
+        {% endif -%} 
