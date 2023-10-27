@@ -28,7 +28,7 @@
   }
 
   function formatComments(comments) {
-    const headline = "<h2>== Responses [Webmention this note]</h2>";
+    const headline = "<h2>== Responses</h2>";
     const markup = comments
       .map((c) => {
         let source = c.author && c.author.name ? c.author.name : c.url.split("/")[2];
