@@ -2,10 +2,12 @@
 layout: 'base.njk'
 ---
 
-{% include "home-button.njk" %}<br><br>
+{% include "home-button.njk" %}
+<br><br><br>
 {%- if type == "replyto" %}
     <article class="h-entry">
         <h2 class="p-name prefix--reply-to">Replying to "<a class="in-reply-to" href="{{ replyto }}">{{ title | safe }}"</a>{%- if mention %} by <span class="h-card">{{ mention }}</span>{% endif -%}</h2>
+        <br>
         <p class="e-content">{{ content | safe }}</p>
         <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
     </article>
@@ -34,8 +36,8 @@ layout: 'base.njk'
     [<input type="text" id="source" name="source" placeholder="&block;">]&nbsp;
     <button type="button" onclick="sendWebMention()">Notify</button>
   </form>
+  </div>
   <div id="response-message"></div>
-</div>
 <br><br>
 
 <div id="webmentions"></div>
