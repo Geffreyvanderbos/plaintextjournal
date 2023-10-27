@@ -21,7 +21,7 @@ I've spent years crafting user-centric software and guiding teams in developing 
 
 </div>
 <ul class="no-list-style">
-    {%- for note in collections.notes -%}
+    {%- for note in collections.notes | reverse -%}
     <li>
         {%- if note.data.type == "replyto" %}
             <article class="h-entry">
