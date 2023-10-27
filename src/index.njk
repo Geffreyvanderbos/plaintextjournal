@@ -31,7 +31,7 @@ I've spent years crafting user-centric software and guiding teams in developing 
             </article>
         <br><br><br>
         {% elseif note.data.type == "likeof" -%}
-            <article class="h-entry"><p class="e-content">♥ I liked "<a href="{{ note.data.likeof }}" class="u-like-of">{{ note.data.likeoftitle }}</a>"{%- if note.data.likeofauthor %} by {{ note.data.likeofauthor }}{% endif -%}</p></article>
+            <article class="h-entry"><p class="e-content">♥ I liked "<a href="{{ note.data.likeof }}" class="u-like-of">{{ note.data.likeoftitle }}</a>"{%- if note.data.likeofauthor %} by <span class="h-card">{{ note.data.likeofauthor }}</span>{% endif -%}</p></article>
             <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
             <br><br><br>
         {% else %}
