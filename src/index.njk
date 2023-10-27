@@ -30,9 +30,9 @@ I've spent years crafting user-centric software and guiding teams in developing 
                 <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
             </article>
         <br><br><br>
-        {% elseif note.data.type == "like" -%}
-            <article><p class="e-content"><3 {{ note.data.likeoftitle }} by {{ note.data.likeofuser }}</p></article>
-            <a class="u-like-of" href="{{ note.data.likeof }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
+        {% elseif note.data.type == "likeof" -%}
+            <article><p class="e-content">♥ I liked "<a href="{{ note.data.likeofurl }}" class="u-like-of">{{ note.data.likeoftitle }}</a>"{%- if note.data.likeofauthor %} by {{ note.data.likeofauthor }}{% endif -%}</p></article>
+            <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
             <br><br><br>
         {% else %}
         <article class="h-entry">

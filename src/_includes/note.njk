@@ -9,20 +9,25 @@ layout: 'base.njk'
         <p class="e-content">{{ content | safe }}</p>
         <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
     </article>
-<br><br><br>
-{% elseif type == "likeof" -%}
-    <article><p class="e-content"><3 {{ likeoftitle }} by {{ likeofuser }}</p></article>
-    <a class="u-like-of" href="{{ likeof }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
     <br><br><br>
-{% else %}
-<article class="h-entry">
-    <h2 class="p-name">=== {{ title | safe }}</h2>
-    <p class="e-content">{{ content | safe }}</p>
+
+{% elseif type == "likeof" -%}
+
+    <article><p class="e-content">♥ I liked "<a href="{{ likeofurl }}" class="u-like-of">{{ likeoftitle }}</a>"{%- if likeofauthor %} by {{ likeofauthor }}{% endif -%}</p></article>
     <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
-</article>
-<br><br><br>
+    <br><br><br>
+
+{% else %}
+
+    <article class="h-entry">
+        <h2 class="p-name">=== {{ title | safe }}</h2>
+        <p class="e-content">{{ content | safe }}</p>
+        <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+    </article>
+    <br><br><br>
+
 {% endif -%} 
 
 <div id="webmentions"></div>
 
-<script src="{{ '/assets/webmention.js' | url }}" async></script>
+<script src="{{ '/assets/webmention.js' | url }}"></script>
