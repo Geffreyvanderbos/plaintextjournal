@@ -30,7 +30,7 @@ layout: 'base.njk'
 
 {% endif -%} 
 
-{# <div id="webmention-form">
+<div id="webmention-form">
   <form id="webmention-form">
     <label for="source">> Your Webmention[<a href="https://indieweb.org/Webmention" class="ignore-external-link" title="Read what a Webmention is">?</a>] URL:&nbsp;</label>
     [<input type="text" id="source" name="source" placeholder="&block;">]&nbsp;
@@ -38,9 +38,9 @@ layout: 'base.njk'
   </form>
   </div>
   <div id="response-message"></div>
-<br><br> #}
+<br><br>
 
 <div id="webmentions"></div>
 
-{# <script src="{{ '/assets/sendwebmention.js' | url }}" async></script> #}
+<script src="{{ '/assets/sendwebmention.js' | url }}" async></script>
 <script src="{{ '/assets/webmention.js' | url }}"></script>
