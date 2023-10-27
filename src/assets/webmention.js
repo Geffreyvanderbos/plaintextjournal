@@ -31,10 +31,11 @@
     const headline = `<h2>== Responses (via Webmention[<a href="https://indieweb.org/Webmention" class="ignore-external-link" title="Read what a Webmention is">?</a>])</h2>`;
     const markup = comments
       .map((c) => {
-        let source = c.author && c.author.name ? c.author.name : c.url.split("/")[2];
+        // let source = c.author && c.author.name ? c.author.name : c.url.split("/")[2];
+        let source = c.author && c.author.name ? `<a href="${c.url}">${c.author.name}</a>` : stripurl(c.url).split("/")[2];
         let comment = c.content && c.content.text ? c.content.text.substring(0, 240) + (c.content.text.length > 240 ? "..." : "") : "Limited";
 
-        return `<li>${source} commented "${comment}"</li>`;
+        return `<li><a href="">${source}</a> commented "${comment}"</li>`;
       })
       .join("");
     return `${headline}<ul class="comments no-list-style">${markup}</ul>`;
