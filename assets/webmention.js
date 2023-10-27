@@ -233,9 +233,7 @@ A more detailed example:
     function formatComments(comments) {
       const headline = `<h2>${t('Responses')}</h2>`;
       const markup = comments
-        .map((c) => {
-          const image = reactImage(c, true);
-  
+        .map((c) => {  
           let source = entities(c.url.split('/')[2]);
           if (c.author && c.author.name) {
             source = entities(c.author.name);
@@ -254,7 +252,7 @@ A more detailed example:
   
           const type = `<span class="${linkclass}">${linktext}</span>`;
   
-          return `<li>${image} ${link} ${type}</li>`;
+          return `<li>${link} ${type}</li>`;
         })
       .join('');
       return `
@@ -284,8 +282,6 @@ A more detailed example:
      */
     function formatReactions(reacts) {
       const headline = `<h2>${t('Reactions')}</h2>`;
-  
-      const markup = reacts.map((r) => reactImage(r)).join('');
   
       return `
         ${headline}
