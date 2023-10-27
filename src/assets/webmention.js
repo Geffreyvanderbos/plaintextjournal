@@ -28,16 +28,16 @@
   }
 
   function formatComments(comments) {
-    const headline = "<h2>== Responses</h2>";
+    const headline = "<h2>== Responses [Webmention this note]</h2>";
     const markup = comments
       .map((c) => {
         let source = c.author && c.author.name ? c.author.name : c.url.split("/")[2];
-        let comment = c.content && c.content.text ? c.content.text.substring(0, 50) + (c.content.text.length > 50 ? "..." : "") : "Limited";
+        let comment = c.content && c.content.text ? c.content.text.substring(0, 240) + (c.content.text.length > 240 ? "..." : "") : "Limited";
 
         return `<li>${source} commented "${comment}"</li>`;
       })
       .join("");
-    return `${headline}<ul class="comments">${markup}</ul>`;
+    return `${headline}<ul class="comments no-list-style">${markup}</ul>`;
   }
 
   window.addEventListener("load", async function () {
@@ -81,13 +81,12 @@
 
     let reactions = "";
     if (collects.length > 0) {
-      reactions = "<h2>== Reactions</h2>";
       collects.forEach(function (reaction) {
         let source = reaction.author && reaction.author.name ? reaction.author.name : reaction.url.split("/")[2];
         let reactionType = reaction["wm-property"].replace("-of", "");
         reactions += `<li>${source} ${reactionType}d this note.</li>`;
       });
-      reactions = `<ul class="reacts">${reactions}</ul>`;
+      reactions = `<ul class="reacts no-list-style">${reactions}</ul>`;
     }
 
     container.innerHTML = `${formattedComments}${reactions}`;
