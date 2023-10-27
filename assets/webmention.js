@@ -40,7 +40,19 @@
     return `${headline}<ul class="comments no-list-style">${markup}</ul>`;
   }
 
+  function showLoadingIndicator() {
+    const container = document.getElementById(containerID);
+    if (container) {
+      container.innerText = "Loading webmentions \u2588";
+      setInterval(function () {
+        container.innerText = container.innerText === "Loading webmentions \u2588" ? "Loading webmentions" : "Loading webmentions \u2588";
+      }, 500);
+    }
+  }
+
   window.addEventListener("load", async function () {
+    showLoadingIndicator();
+
     const container = document.getElementById(containerID);
     if (!container) {
       return;
