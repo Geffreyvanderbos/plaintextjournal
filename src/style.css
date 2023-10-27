@@ -29,7 +29,7 @@ a, a:hover, a:visited {
     color: black;
 }
 
-a[href*="//"]:not([href*="geff.re"])::after {
+a[href*="//"]:not([href*="geff.re"]):not(.ignore-external-link)::after {
     content: "↗";
     display:inline-block;
 }
