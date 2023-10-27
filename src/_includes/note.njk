@@ -10,7 +10,7 @@ layout: 'base.njk'
         <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
     </article>
 <br><br><br>
-{% elseif type == "like" -%}
+{% elseif type == "likeof" -%}
     <article><p class="e-content"><3 {{ likeoftitle }} by {{ likeofuser }}</p></article>
     <a class="u-like-of" href="{{ likeof }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
     <br><br><br>
