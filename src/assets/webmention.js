@@ -43,9 +43,14 @@
   function showLoadingIndicator() {
     const container = document.getElementById(containerID);
     if (container) {
-      container.innerText = "Loading webmentions \u2588";
+      container.innerHTML = "Loading webmentions <span id='loading-indicator'>&#9608;</span>";
+      let isBlinking = true;
       setInterval(function () {
-        container.innerText = container.innerText === "Loading webmentions \u2588" ? "Loading webmentions" : "Loading webmentions \u2588";
+        const indicator = document.getElementById('loading-indicator');
+        if (indicator) {
+          indicator.style.visibility = isBlinking ? 'hidden' : 'visible';
+          isBlinking = !isBlinking;
+        }
       }, 500);
     }
   }
@@ -68,8 +73,7 @@
       if (response.status >= 200 && response.status < 300) {
         json = await response.json();
       } else {
-        console.error("Could not parse response");
-        new Error(response.statusText);
+        throw new Error(response.statusText);
       }
     } catch (error) {
       console.error("Request failed", error);
@@ -101,6 +105,10 @@
       reactions = `<ul class="reacts no-list-style">${reactions}</ul>`;
     }
 
-    container.innerHTML = `${formattedComments}${reactions}`;
+    if (formattedComments || reactions) {
+      container.innerHTML = `${formattedComments}${reactions}`;
+    } else {
+      container.innerHTML = "<p>No responses yet. Be the first to comment!</p>";
+    }
   });
 })();
