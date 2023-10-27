@@ -2,27 +2,39 @@ function sendWebMention() {
     const source = document.getElementById('source').value;
     const target = window.location.href;
   
-    const endpoint = 'https://webmention.io/geff.re/webmention';
+    const endpoint = 'https://webmention.io/geff.re/xmlrpc'; // Replace with your Webmention.io endpoint URL
   
-    const data = {
-      source: source,
-      target: target
-    };
+    const data = `
+      <methodCall>
+        <methodName>pingback.ping</methodName>
+        <params>
+          <param>
+            <value>
+              <string>${source}</string>
+            </value>
+          </param>
+          <param>
+            <value>
+              <string>${target}</string>
+            </value>
+          </param>
+        </params>
+      </methodCall>
+    `;
   
     fetch(endpoint, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/xml'
       },
-      body: JSON.stringify(data)
+      body: data
     })
-      .then(response => response.json())
-      .then(data => {
-        const responseMessage = document.getElementById('response-message');
-        if (data.success) {
+      .then(response => {
+        if (response.ok) {
+          const responseMessage = document.getElementById('response-message');
           responseMessage.innerHTML = 'Webmention sent successfully!';
         } else {
-          responseMessage.innerHTML = 'Failed to send webmention. Please try again later.';
+          throw new Error('Failed to send webmention. Please try again later.');
         }
       })
       .catch(error => {
@@ -31,3 +43,4 @@ function sendWebMention() {
         responseMessage.innerHTML = 'An error occurred. Please try again later.';
       });
   }
+  
