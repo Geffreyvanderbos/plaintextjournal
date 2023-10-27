@@ -231,7 +231,7 @@ A more detailed example:
      * @returns string
      */
     function formatComments(comments) {
-      const headline = `<h2>${t('Responses')}</h2>`;
+      const headline = `<h2>${t('== Responses')}</h2>`;
       const markup = comments
         .map((c) => {  
           let source = entities(c.url.split('/')[2]);
@@ -257,7 +257,7 @@ A more detailed example:
       .join('');
       return `
         ${headline}
-        <ul class="comments">${markup}</ul>
+        <ul class="comments no-list-style">${markup}</ul>
       `;
     }
   
