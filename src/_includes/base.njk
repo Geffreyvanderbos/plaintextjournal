@@ -9,11 +9,9 @@
     <link rel="webmention" href="https://webmention.io/geff.re/webmention" />
 </head>
 <body>
-    <div class="invisible h-card">
-        <a class="p-name u-url"
-            href="https://geff.re" 
-        >Geffrey van der Bos</a> 
-    </div> 
+    <aside>
+    {% include "h-card.njk" %}
+    </aside>
     <main>
     {{ content | safe }}
     </main>

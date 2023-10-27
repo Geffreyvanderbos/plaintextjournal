@@ -2,24 +2,27 @@
 layout: 'base.njk'
 ---
 
-<script src="/assets/webmention.min.js" data-id="webmention-container" async></script>
+{% include "home-button.njk" %}<br><br>
+{%- if type == "replyto" %}
+    <article class="h-entry">
+        <h2 class="p-name prefix--reply-to">Replying to "<a class="in-reply-to" href="{{ replyto }}">{{ title | safe }}"</a>{%- if mention %} by <span class="h-card">{{ mention }}</span>{% endif -%}</h2>
+        <p class="e-content">{{ content | safe }}</p>
+        <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+    </article>
+<br><br><br>
+{% elseif type == "like" -%}
+    <article><p class="e-content"><3 {{ likeoftitle }} by {{ likeofuser }}</p></article>
+    <a class="u-like-of" href="{{ likeof }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+    <br><br><br>
+{% else %}
+<article class="h-entry">
+    <h2 class="p-name">=== {{ title | safe }}</h2>
+    <p class="e-content">{{ content | safe }}</p>
+    <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
+</article>
+<br><br><br>
+{% endif -%} 
 
-        {%- if type == "replyto" %}
-            <article class="h-entry">
-                <h2 class="p-name prefix--reply-to">Replying to "<a class="in-reply-to" href="{{ replyto }}">{{ title | safe }}"</a></h2>
-                <p class="e-content">{{ content | safe }}</p>
-                <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
-            </article>
-        <br><br><br>
-        {% elseif type == "like" -%}
-            <article><p class="e-content"><3 {{ likeoftitle }} by {{ likeofuser }}</p></article>
-            <a class="u-like-of" href="{{ likeof }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
-            <br><br><br>
-        {% else %}
-        <article class="h-entry">
-            <h2 class="p-name">=== {{ title | safe }}</h2>
-            <p class="e-content">{{ content | safe }}</p>
-            <a class="u-url" href="{{ url }}"><time class="dt-published">{{ page.date | asPostDate }}</time></a> 
-        </article>
-        <br><br><br>
-        {% endif -%} 
+<div id="webmentions"></div>
+
+<script src="{{ '/assets/webmention.min.js' | url }}" async></script>

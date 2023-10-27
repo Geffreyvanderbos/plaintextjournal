@@ -25,7 +25,7 @@ I've spent years crafting user-centric software and guiding teams in developing 
     <li>
         {%- if note.data.type == "replyto" %}
             <article class="h-entry">
-                <h2 class="p-name prefix--reply-to">Replying to "<a href="{{ note.data.replyto }}">{{ note.data.title | safe }}"</a></h2>
+                <h2 class="p-name prefix--reply-to">Replying to "<a href="{{ note.data.replyto }}">{{ note.data.title | safe }}"</a>{%- if note.data.mention %} by <span class="h-card">{{ note.data.mention }}</span>{% endif -%}</h2>
                 <p class="e-content">{{ note.content | safe }}</p>
                 <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
             </article>

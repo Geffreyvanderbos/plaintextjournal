@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, p {
 .nowrap {
     white-space: nowrap;
 }
+
 .invisible {
     display: none;
 }
@@ -40,6 +41,11 @@ a:hover {
 
 .prefix--back-arrow::before {
     content: "←\00a0";
+    display: inline-block; 
+}
+
+.prefix--reply-to::before {
+    content: "<\00a0";
     display: inline-block; 
 }
 
