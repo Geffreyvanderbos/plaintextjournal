@@ -25,12 +25,23 @@
         <h2 class="p-name prefix--reply-to">Replying to "<a class="in-reply-to" href="https://webmention.rocks/test/2">Discovery test #2"</a> by <span class="h-card">webmention.rocks</span></h2>
         <p class="e-content"><p>The first try worked. Now I’ll have to check this GitHub repo that sends webmentions automatically (instead of Telegraph). Oh, and I’d like to get webmention.js working. Eventually I will try to syndicate my notes.</p>
 </p>
-        <a class="u-url" href=""><time class="dt-published">2023-10-27 08:20</time></a> 
+        <a class="u-url" href=""><time class="dt-published">2023-10-27 09:07</time></a> 
     </article>
     <br><br><br>
 
+<div id="webmention-form">
+  <form id="webmention-form">
+    <label for="source">> Your Webmention URL:&nbsp;</label>
+    [<input type="text" id="source" name="source" placeholder="&block;">]&nbsp;
+    <button type="button" onclick="sendWebMention()">Notify</button>
+  </form>
+  <div id="response-message"></div>
+</div>
+<br><br>
+
 <div id="webmentions"></div>
 
+<script src="/assets/sendwebmention.js" async></script>
 <script src="/assets/webmention.js"></script>
     </main>
 </body>

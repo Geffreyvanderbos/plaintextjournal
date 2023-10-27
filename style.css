@@ -64,3 +64,63 @@ a:hover {
         color: white;
     }
 }
+
+#webmention-form {
+    display: flex;
+  }
+  
+  #webmention-form input[type="text"] {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    outline: none;
+  }
+
+  #webmention-form input[type="text"]:placeholder-shown {
+    animation: blink 1s step-start infinite;
+  }
+
+  #webmention-form input[type="text"]:focus {
+    animation: none;
+    opacity: 1;
+  }
+
+  #webmention-form input[type="text"]::placeholder {
+    font-weight: normal;
+    color: inherit;
+  }
+
+  #webmention-form input[type="text"]:focus::placeholder {
+    color: transparent;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #webmention-form button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  #webmention-form button:hover {
+    cursor: default;
+    text-decoration: none;
+  }
+  

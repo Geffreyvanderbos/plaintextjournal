@@ -51,7 +51,7 @@
           indicator.style.visibility = isBlinking ? 'hidden' : 'visible';
           isBlinking = !isBlinking;
         }
-      }, 500);
+      }, 200);
     }
   }
 
@@ -108,7 +108,7 @@
     if (formattedComments || reactions) {
       container.innerHTML = `${formattedComments}${reactions}`;
     } else {
-      container.innerHTML = "<p>No responses yet. Be the first to comment!</p>";
+      container.innerHTML = "<p>No responses yet. What a lonely note.</p>";
     }
   });
 })();
