@@ -9,6 +9,9 @@ module.exports = function(eleventyConfig) {
         // return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
         return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd HH:mm');
     })
+    eleventyConfig.addFilter("isoString", (dateObj) => {
+        return DateTime.fromJSDate(dateObj).toISO();
+    })
 
     return {
         dir: {
