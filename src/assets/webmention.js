@@ -28,7 +28,7 @@
   }
 
   function formatComments(comments) {
-    const headline = "<h2>== Responses</h2>";
+    const headline = `<h2>== Responses (via Webmention[<a href="https://indieweb.org/Webmention" class="ignore-external-link" title="Read what a Webmention is">?</a>])</h2>`;
     const markup = comments
       .map((c) => {
         let source = c.author && c.author.name ? c.author.name : c.url.split("/")[2];
@@ -43,7 +43,7 @@
   function showLoadingIndicator() {
     const container = document.getElementById(containerID);
     if (container) {
-      container.innerHTML = "Loading webmentions <span id='loading-indicator'>&#9608;</span>";
+      container.innerHTML = "Loading Webmentions <span id='loading-indicator'>&#9608;</span>";
       let isBlinking = true;
       setInterval(function () {
         const indicator = document.getElementById('loading-indicator');
@@ -108,7 +108,7 @@
     if (formattedComments || reactions) {
       container.innerHTML = `${formattedComments}${reactions}`;
     } else {
-      container.innerHTML = "<p>No responses yet. What a lonely note.</p>";
+      container.innerHTML = `<p>No responses yet. Send a Webmention[<a href="https://indieweb.org/Webmention" class="ignore-external-link" title="Read what a Webmention is">?</a>].</p>`;
     }
   });
 })();
