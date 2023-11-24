@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://plaintextjournal.com/">
+  <title>The Plain Text Journal</title>
+  <subtitle></subtitle>
+  <link href="https://plaintextjournal.com/feed.xml" rel="self"/>
+  <link href="https://plaintextjournal.com/"/>
+  <updated>2023-11-24T19:44:55Z</updated>
+  <id>https://plaintextjournal.com/</id>
+  <author>
+    <name>Geffrey van der Bos</name>
+    <email>plaintext@geff.re</email>
+  </author>
+  <entry>
+    <title>Managing and Synchronizing Plain Text Files Across Devices</title>
+    <link href="https://plaintextjournal.com/articles/synchronizing-plain-text-files/"/>
+    <updated>2023-11-24T19:44:55Z</updated>
+    <id>https://plaintextjournal.com/articles/synchronizing-plain-text-files/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;Whether you&#39;re using Windows, macOS, Android, iOS, or iPadOS, various tools and services can help keep your plain text files seamlessly updated and accessible.&lt;/p&gt;
+&lt;h2&gt;Cloud Storage Services for Cross-Platform Synchronization&lt;/h2&gt;
+&lt;p&gt;Cloud storage services are a straightforward solution for syncing plain text files across different platforms. Services like Dropbox, Google Drive, and OneDrive offer apps for all major operating systems, ensuring real-time updates and easy access to your files.&lt;/p&gt;
+&lt;h2&gt;Specialized Text Editors with Sync Features&lt;/h2&gt;
+&lt;p&gt;Several text editors and note-taking apps come with built-in synchronization capabilities, catering to those who need more than just basic text editing. For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;iA Writer: Offers seamless sync across Windows, macOS, iOS, and Android via cloud services.&lt;/li&gt;
+&lt;li&gt;Obsidian: Known for knowledge management, it can sync files across devices using its own service or third-party cloud storage.&lt;/li&gt;
+&lt;li&gt;Joplin: Supports Markdown and syncs across devices using Dropbox, OneDrive, or WebDAV.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Syncthing: Private and Secure File Synchronization&lt;/h2&gt;
+&lt;p&gt;Syncthing is an open-source tool that provides a secure and private way to synchronize files directly between devices. It&#39;s available for Windows, macOS, Linux, and Android, and ensures that your data is not stored on any central server, offering an extra layer of privacy.&lt;/p&gt;
+&lt;h3&gt;Tip: Mobius Sync for iOS&lt;/h3&gt;
+&lt;p&gt;This app brings the capabilities of Syncthing to iOS devices, allowing for secure, peer-to-peer file synchronization between iPhones, iPads, and other devices running Syncthing.&lt;/p&gt;
+&lt;h2&gt;Version Control Systems: Advanced Sync Solutions&lt;/h2&gt;
+&lt;p&gt;For users who require advanced synchronization and collaboration features, version control systems like Git are ideal. Platforms such as GitHub and GitLab offer additional functionalities for managing and syncing text files, especially useful for team collaborations.&lt;/p&gt;
+&lt;h2&gt;Manual Synchronization: Direct Control&lt;/h2&gt;
+&lt;p&gt;For those who prefer direct control over their files, manual synchronization is always an option. Transferring files via USB, email, or messaging apps offers simplicity and complete control over the transfer process. That&#39;s the power of plain text.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The choice of tools for managing and synchronizing plain text files across various devices depends on your specific needs. From cloud storage solutions like Dropbox and OneDrive to specialized text editors, Syncthing with Mobius Sync for iOS, and version control systems, there are diverse options to ensure your plain text files are always in sync, accessible, and up-to-date, regardless of your device or operating system.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Reading and Writing Plain Text (Tools)</title>
+    <link href="https://plaintextjournal.com/articles/reading-writing-plaintext/"/>
+    <updated>2023-11-24T19:44:55Z</updated>
+    <id>https://plaintextjournal.com/articles/reading-writing-plaintext/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;In this exploration, we look at a range of tools, from basic text editors to more advanced applications, including Obsidian, Emacs, and iA Writer, which can significantly improve your plain text experience.&lt;/p&gt;
+&lt;h2&gt;Basic Text Editors: The Foundation&lt;/h2&gt;
+&lt;p&gt;Basic text editors are essential for anyone working with plain text. They provide a straightforward environment for writing and editing without complex formatting. Popular options include Notepad for Windows, TextEdit for macOS, and Gedit for Linux.&lt;/p&gt;
+&lt;h2&gt;Advanced Text Editors: Enhanced Functionality&lt;/h2&gt;
+&lt;p&gt;For more demanding tasks, advanced text editors offer additional features like syntax highlighting and advanced search functionalities. Examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sublime Tex: A favorite for its speed and ease of use, offering extensive plugin support.&lt;/li&gt;
+&lt;li&gt;Atom: An open-source editor known for its flexibility and integration with GitHub.&lt;/li&gt;
+&lt;li&gt;Emacs: A highly customizable and powerful text editor, Emacs is more than just a text editor; it’s a complete ecosystem. Its extensible nature allows it to function as an IDE, a calendar, and even an email client, making it a favored choice for those who value customization and control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Markdown Editors: For Formatted Plain Text&lt;/h2&gt;
+&lt;p&gt;Markdown editors blend the simplicity of plain text with basic formatting. They are ideal for writing web content, documentation, and notes. Some notable examples are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MarkdownPad (Windows): Offers live previews and extensive customization options.&lt;/li&gt;
+&lt;li&gt;MacDown (macOS): Known for its split-screen interface and live preview functionality.&lt;/li&gt;
+&lt;li&gt;iA Writer: A minimalist Markdown editor available for multiple platforms, iA Writer emphasizes a distraction-free writing environment. It is renowned for its focus mode, which helps writers concentrate on their current sentence.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Specialized Plain Text Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Obsidian: A tool for those interested in building a knowledge base or personal wiki using plain text files. Obsidian stands out for its ability to link thoughts and notes through an interconnected system, making it ideal for complex note-taking and knowledge management.&lt;/li&gt;
+&lt;li&gt;Joplin:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The range of tools available for use with plain text ensures that there&#39;s something for everyone, whether you need a simple editor for quick notes or a more sophisticated environment for complex projects. From Obsidian’s interlinked notes to Emacs’s extensive customization, and iA Writer’s focused writing environment, these tools enhance the plain text experience, making it more efficient and versatile.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Markup Languages for Plain Text</title>
+    <link href="https://plaintextjournal.com/articles/markup-languages-plain-text/"/>
+    <updated>2023-11-24T19:44:55Z</updated>
+    <id>https://plaintextjournal.com/articles/markup-languages-plain-text/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;Markup languages for plain text are essential tools in document creation and formatting. Unlike HTML, which is primarily for web development, these languages are tailored for creating, formatting, and structuring a wide range of documents. Here&#39;s an overview of several key markup languages that are particularly useful for document-centric tasks.&lt;/p&gt;
+&lt;h2&gt;Markdown&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Designed for its readability and simplicity, Markdown is widely used for creating web content, blog posts, and documentation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: Its straightforward syntax makes it accessible for those without advanced technical skills. Markdown is supported by many content management systems and is ideal for projects that require basic formatting.&lt;/p&gt;
+&lt;h2&gt;LaTeX&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: A high-quality typesetting system, LaTeX is ideal for producing complex and well-structured documents, especially academic and scientific papers that include formulas and specialized notations&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: It provides precise control over document layout and supports complex formatting, making it a standard in academia and research.&lt;/p&gt;
+&lt;h2&gt;ASCIIDoc&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: This is a readable and straightforward markup language used for writing articles, books, ebooks, and technical documentation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: ASCIIDoc is highly versatile, supporting various output formats including HTML, PDF, and EPUB. It offers a richer set of features compared to Markdown, suitable for more complex documentation needs.&lt;/p&gt;
+&lt;h2&gt;reStructuredText&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Primarily used within the Python programming community for technical documentation, it&#39;s also suitable for creating web pages and slide presentations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: Known for its extensibility and power,
+reStructuredText supports complex document structures and multiple output formats, making it ideal for technical writers.&lt;/p&gt;
+&lt;h2&gt;Org-mode&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: Org-mode, often used within Emacs, is a mode for keeping notes, maintaining to-do lists, planning projects, and authoring documents with a fast and effective plain-text system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: It’s incredibly flexible, allowing users to mix to-do lists, spreadsheet-like calculations, and executable code blocks, making it a powerhouse for academic writing and project planning.&lt;/p&gt;
+&lt;h2&gt;Textile&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Purpose&lt;/strong&gt;: A lightweight markup language designed for those who need to quickly convert plain text to rich text, used in content management systems and for writing articles or blogs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: Textile is user-friendly and provides a simple syntax for formatting, which is easier to write and read than HTML, making it suitable for those who prioritize ease of use.&lt;/p&gt;
+&lt;p&gt;These markup languages offer a range of functionalities tailored to various document formatting needs. From the simplicity of Markdown to the comprehensive control of LaTeX, and the flexibility of Org-mode, each language caters to different aspects of document creation and formatting in plain text. Understanding the strengths of each can help you choose the most appropriate one for your specific document creation needs.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>An Introduction to Plain Text</title>
+    <link href="https://plaintextjournal.com/articles/introduction-plain-text/"/>
+    <updated>2023-11-24T19:44:55Z</updated>
+    <id>https://plaintextjournal.com/articles/introduction-plain-text/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;Plain text, in its fundamental form, has been a cornerstone of digital communication since the dawn of computing. Its origins trace back to the early days of computers when text was processed in simple formats. This was due to the limited capabilities of early computers, which could only handle basic text data.&lt;/p&gt;
+&lt;p&gt;The ASCII (American Standard Code for Information Interchange), developed in the 1960s, became a standard for representing text in computers, laying the foundation for what we know as plain text today.&lt;/p&gt;
+&lt;p&gt;Nowadays, in a world where digital tools complicate rather than simplify, plain text offers a welcome change. Its straightforwardness is its core appeal, allowing users to focus on their content without the distractions of advanced formatting.&lt;/p&gt;
+&lt;h2&gt;Universal Accessibility&lt;/h2&gt;
+&lt;p&gt;One of the strongest points of plain text is its universal accessibility. You don’t need specialized software or technical know-how. It’s ideal for those who prefer simplicity and efficiency, as it works with any basic text editor. The lightweight nature of plain text files ensures they’re quick to load and easy to manage, even on less powerful devices.&lt;/p&gt;
+&lt;h2&gt;Versatility for Various Needs&lt;/h2&gt;
+&lt;p&gt;The versatility of plain text is another advantage. Whether it&#39;s for jotting down ideas, managing tasks, or even drafting content, plain text is incredibly adaptable. Its unformatted nature makes it perfect for a wide range of applications, from creating simple lists to scripting code for websites or automating tasks. The format’s simplicity doesn’t limit its potential; instead, it encourages creativity and flexibility in its use.&lt;/p&gt;
+&lt;h2&gt;Enduring Relevance in the Digital Age&lt;/h2&gt;
+&lt;p&gt;In our rapidly evolving digital world, plain text remains remarkably relevant. Its simplicity makes it a durable tool for today&#39;s needs, suitable for backing up information, organizing notes, or scripting tasks. Unlike some proprietary formats that can become obsolete, plain text files are timeless. They can be opened and read decades later, ensuring the longevity of the information stored. This enduring nature makes plain text a reliable choice for preserving valuable data and personal memories.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Backing up and versioning your text files</title>
+    <link href="https://plaintextjournal.com/articles/backup-plain-text-files/"/>
+    <updated>2023-11-24T19:44:55Z</updated>
+    <id>https://plaintextjournal.com/articles/backup-plain-text-files/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;In the realm of digital data management, backing up and versioning files, especially plain text files, are vital practices. The simplicity and versatility of plain text files offer unique advantages in these processes. This article emphasizes the importance of these practices, particularly through the lens of the 3-2-1 backup rule, while distinguishing them from mere synchronization.&lt;/p&gt;
+&lt;h2&gt;Understanding the 3-2-1 Backup Rule&lt;/h2&gt;
+&lt;p&gt;The 3-2-1 backup strategy is a foundational principle in data backup and security. It suggests having:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3 total copies of your data: One primary and two backups.&lt;/li&gt;
+&lt;li&gt;2 different media types: To minimize the risk of both backups failing.&lt;/li&gt;
+&lt;li&gt;1 offsite backup: To guard against local disasters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This strategy is particularly effective for plain text files, given their adaptability and compatibility with various storage mediums.&lt;/p&gt;
+&lt;h2&gt;Why Backup and Versioning Matter&lt;/h2&gt;
+&lt;p&gt;Data Security and Recovery: Backups are crucial for data security, protecting against loss from hardware malfunctions, accidental deletions, or cyber-attacks.&lt;/p&gt;
+&lt;p&gt;Historical Record through Versioning: Versioning creates a historical record of changes, allowing for reversions to previous states and management of document evolution, especially in collaborative settings.&lt;/p&gt;
+&lt;h2&gt;Backup and Versioning Plain Text&lt;/h2&gt;
+&lt;p&gt;Efficient Storage and Compatibility: Plain text files are lightweight and universally compatible, making them ideal for various backup mediums and ensuring easy restoration.&lt;/p&gt;
+&lt;p&gt;Version Control Simplicity: Their simple format is conducive to version control systems, facilitating efficient change tracking and comparison between versions.&lt;/p&gt;
+&lt;h2&gt;Implementing the 3-2-1 Rule with Plain Text Files&lt;/h2&gt;
+&lt;p&gt;Diverse Storage Solutions: Employ physical devices like external hard drives and USB flash drives, combined with cloud storage services, to fulfill the 3-2-1 rule. Remember, cloud synchronization services like Dropbox or Google Drive are for accessibility and not considered true backups.&lt;/p&gt;
+&lt;p&gt;Offsite Backup Options: Utilize cloud storage or remote physical locations to store one of the backups, ensuring protection against local disasters.&lt;/p&gt;
+&lt;h2&gt;Version Control and Plain Text&lt;/h2&gt;
+&lt;p&gt;Git for Tracking Changes: Use Git for version control of plain text files. It efficiently manages revisions and integrates with platforms like GitHub for remote versioning.&lt;/p&gt;
+&lt;p&gt;Text Editors with Version History: Select advanced text editors like Sublime Text or Atom that offer version history features for direct management of file changes.&lt;/p&gt;
+&lt;h2&gt;Additional Strategies for Plain Text Management&lt;/h2&gt;
+&lt;p&gt;Automated Backup Scripts: Create scripts to automate the backup process, ensuring regular and consistent backups in line with the 3-2-1 rule.&lt;/p&gt;
+&lt;p&gt;Encryption for Security: Encrypting plain text files before backup adds an additional layer of security, essential for sensitive data.&lt;/p&gt;
+&lt;p&gt;Adhering to the 3-2-1 backup rule is essential in the digital landscape, and plain text files offer significant advantages due to their simplicity and compatibility. By strategically using diverse storage methods, ensuring offsite backups, and employing version control, you can effectively safeguard your plain text files. This approach ensures not just the preservation of your data but also its resilience in the face of potential digital calamities.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
