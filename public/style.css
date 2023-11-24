@@ -11,7 +11,6 @@ body {
     flex-direction: column; 
     font-family: 'Courier Prime', 'Courier New', Courier, monospace;
     line-height: 1.2;
-    overflow-x: hidden;
     background-color: var(--secondary);
     color: var(--primary);
     margin: 0;
@@ -46,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-heading {
-  font-size: calc(18px + 3vw);
+  font-size: calc(18px + 2.5vw);
   border-bottom: 1px solid var(--primary);
   margin: 0;
 }
@@ -101,7 +100,7 @@ a:hover, .fp-heading-excerpt a {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 calc(-2rem + 1px) 0 -2rem;
+  margin: 0 calc(-1rem + 1px) 0 -1rem;
 }
 
 .introduction {
