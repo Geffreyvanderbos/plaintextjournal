@@ -1,0 +1,39 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "The Plain Text Journal",
+    "subtitle": "",
+    "language": "en",
+    "url": "https://plaintextjournal.com/",
+    "author": {
+      "name": "Geffrey van der Bos",
+      "email": "plaintext@geff.re"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.articles | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for article in collections.articles | reverse %}
+  {%- set absoluteArticleUrl = article.url | absoluteUrl(metadata.url) %}
+  <entry>
+    <title>{{ article.data.title }}</title>
+    <link href="{{ absoluteArticleUrl }}"/>
+    <updated>{{ article.date | dateToRfc3339 }}</updated>
+    <id>{{ absoluteArticleUrl }}</id>
+    <content xml:lang="{{ metadata.language }}" type="html">{{ article.templateContent | htmlToAbsoluteUrls(absoluteArticleUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
