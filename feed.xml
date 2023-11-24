@@ -4,7 +4,7 @@
   <subtitle></subtitle>
   <link href="https://plaintextjournal.com/feed.xml" rel="self"/>
   <link href="https://plaintextjournal.com/"/>
-  <updated>2023-11-24T19:44:55Z</updated>
+  <updated>2023-11-24T19:45:38Z</updated>
   <id>https://plaintextjournal.com/</id>
   <author>
     <name>Geffrey van der Bos</name>
@@ -13,7 +13,7 @@
   <entry>
     <title>Managing and Synchronizing Plain Text Files Across Devices</title>
     <link href="https://plaintextjournal.com/articles/synchronizing-plain-text-files/"/>
-    <updated>2023-11-24T19:44:55Z</updated>
+    <updated>2023-11-24T19:45:38Z</updated>
     <id>https://plaintextjournal.com/articles/synchronizing-plain-text-files/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Whether you&#39;re using Windows, macOS, Android, iOS, or iPadOS, various tools and services can help keep your plain text files seamlessly updated and accessible.&lt;/p&gt;
 &lt;h2&gt;Cloud Storage Services for Cross-Platform Synchronization&lt;/h2&gt;
@@ -40,7 +40,7 @@
   <entry>
     <title>Reading and Writing Plain Text (Tools)</title>
     <link href="https://plaintextjournal.com/articles/reading-writing-plaintext/"/>
-    <updated>2023-11-24T19:44:55Z</updated>
+    <updated>2023-11-24T19:45:38Z</updated>
     <id>https://plaintextjournal.com/articles/reading-writing-plaintext/</id>
     <content xml:lang="en" type="html">&lt;p&gt;In this exploration, we look at a range of tools, from basic text editors to more advanced applications, including Obsidian, Emacs, and iA Writer, which can significantly improve your plain text experience.&lt;/p&gt;
 &lt;h2&gt;Basic Text Editors: The Foundation&lt;/h2&gt;
@@ -70,7 +70,7 @@
   <entry>
     <title>Markup Languages for Plain Text</title>
     <link href="https://plaintextjournal.com/articles/markup-languages-plain-text/"/>
-    <updated>2023-11-24T19:44:55Z</updated>
+    <updated>2023-11-24T19:45:38Z</updated>
     <id>https://plaintextjournal.com/articles/markup-languages-plain-text/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Markup languages for plain text are essential tools in document creation and formatting. Unlike HTML, which is primarily for web development, these languages are tailored for creating, formatting, and structuring a wide range of documents. Here&#39;s an overview of several key markup languages that are particularly useful for document-centric tasks.&lt;/p&gt;
 &lt;h2&gt;Markdown&lt;/h2&gt;
@@ -98,7 +98,7 @@ reStructuredText supports complex document structures and multiple output format
   <entry>
     <title>An Introduction to Plain Text</title>
     <link href="https://plaintextjournal.com/articles/introduction-plain-text/"/>
-    <updated>2023-11-24T19:44:55Z</updated>
+    <updated>2023-11-24T19:45:38Z</updated>
     <id>https://plaintextjournal.com/articles/introduction-plain-text/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Plain text, in its fundamental form, has been a cornerstone of digital communication since the dawn of computing. Its origins trace back to the early days of computers when text was processed in simple formats. This was due to the limited capabilities of early computers, which could only handle basic text data.&lt;/p&gt;
 &lt;p&gt;The ASCII (American Standard Code for Information Interchange), developed in the 1960s, became a standard for representing text in computers, laying the foundation for what we know as plain text today.&lt;/p&gt;
@@ -114,7 +114,7 @@ reStructuredText supports complex document structures and multiple output format
   <entry>
     <title>Backing up and versioning your text files</title>
     <link href="https://plaintextjournal.com/articles/backup-plain-text-files/"/>
-    <updated>2023-11-24T19:44:55Z</updated>
+    <updated>2023-11-24T19:45:38Z</updated>
     <id>https://plaintextjournal.com/articles/backup-plain-text-files/</id>
     <content xml:lang="en" type="html">&lt;p&gt;In the realm of digital data management, backing up and versioning files, especially plain text files, are vital practices. The simplicity and versatility of plain text files offer unique advantages in these processes. This article emphasizes the importance of these practices, particularly through the lens of the 3-2-1 backup rule, while distinguishing them from mere synchronization.&lt;/p&gt;
 &lt;h2&gt;Understanding the 3-2-1 Backup Rule&lt;/h2&gt;
