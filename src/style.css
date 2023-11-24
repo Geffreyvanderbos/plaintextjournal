@@ -126,7 +126,7 @@ a:hover, .fp-heading-excerpt a {
 }
 
 .fp-cell {
-  padding: 2rem;
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
   border-right: 1px solid var(--primary);
   border-bottom: 1px solid var(--primary);
 }
