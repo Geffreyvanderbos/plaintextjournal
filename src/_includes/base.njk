@@ -14,11 +14,11 @@
 
 </head>
 <body>
-    <aside>
-    {% include "h-card.njk" %}
-    </aside>
     <main>
     {{ content | safe }}
     </main>
+    <footer>
+        {% include "footer.njk" %}
+    </footer>
 </body>
 </html> 

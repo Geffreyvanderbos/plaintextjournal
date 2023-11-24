@@ -1,5 +1,5 @@
 .DS_Store
 node_modules
 public
-src/notes/.obsidian
-src/notes/obsidian-related
+src/articles/.obsidian
+src/articles/obsidian-related

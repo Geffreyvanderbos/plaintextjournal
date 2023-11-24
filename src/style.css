@@ -1,126 +1,147 @@
-body {
-    margin: 3vw; 
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.2;
-    max-width: 80ch;
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+  --primary: #161616;
+  --secondary: #ededed;
 }
 
-h1, h2, h3, h4, h5, p {
-    font-weight: normal;
+body {
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
+    line-height: 1.2;
+    overflow-x: hidden;
+    background-color: var(--secondary);
+    color: var(--primary);
     margin: 0;
     padding: 0;
-    font-size: inherit;
 }
 
-.pre-wrap {
-    white-space: pre-wrap;
+main, footer {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
-.nowrap {
-    white-space: nowrap;
+main {
+  padding: 3rem 0;
+  flex: 1;
 }
 
-.invisible {
-    display: none;
+footer {
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid var(--primary);
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.title-heading {
+  font-size: calc(18px + 3vw);
+  border-bottom: 1px solid var(--primary);
+  margin: 0;
+}
+
+.title-lead, .articles-list {
+  display: block;
+}
+
+.title-lead {
+  padding: 1em 0;
+}
+
+.articles-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+h1 { font-size: 1.476rem; }
+h2 { font-size: 1.383rem; }
+h3 { font-size: 1.296rem; }
+h4 { font-size: 1.215rem; }
+h5 { font-size: 1.138rem; }
+h6 { font-size: 1.067rem; }
+p { font-size: 1rem; }
 
 a, a:hover, a:visited {
-    color: black;
+    color: var(--primary);
+    text-decoration: underline 1px;
 }
 
 a[href*="//"]:not([href*="geff.re"]):not(.ignore-external-link)::after {
     content: "↗";
-    display:inline-block;
+    display: inline-block;
 }
 
-a:hover {
+a:hover, .fp-heading-excerpt a {
     text-decoration: none;
     cursor: default;
 }
 
-.prefix--back-arrow::before {
-    content: "←\00a0";
-    display: inline-block; 
+.table-wrapper {
+  overflow-x: auto;
 }
 
-.prefix--reply-to::before {
-    content: "<\00a0";
-    display: inline-block; 
+.container {
+  overflow-x: hidden;
 }
 
-.no-list-style {
-    list-style: none;
-    padding: 0;
+.frontpage {
+  border-top: 1px solid var(--primary);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 calc(-2rem + 1px) 0 -2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000033;
-        color: white;
-        }
-    
-    a, a:hover, a:visited {
-        color: white;
-    }
+.introduction {
+  display: none;
 }
 
-#webmention-form {
-    display: flex;
-  }
-  
-  #webmention-form input[type="text"] {
-    border: none;
-    background-color: transparent;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 0;
-    outline: none;
-  }
+@media only screen and (min-width: 768px) {
+  .frontpage { grid-template-columns: repeat(2, 1fr); }
+}
 
-  #webmention-form input[type="text"]:placeholder-shown {
-    animation: blink 1s step-start infinite;
-  }
+@media only screen and (min-width: 1024px) {
+  .frontpage { grid-template-columns: repeat(3, 1fr); }
+  .introduction, .fp-cell:nth-child(1) { display: block; }
+  .fp-cell:nth-child(1) { grid-column: 1 / 2; grid-row: 1 / 6; }
+  .fp-cell:nth-child(2) { grid-column: 2 / span 2; grid-row: 1 / span 1; }
+}
 
-  #webmention-form input[type="text"]:focus {
-    animation: none;
-    opacity: 1;
-  }
+@media only screen and (min-width: 1280px) {
+  .frontpage { grid-template-columns: repeat(4, 1fr); }
+  .fp-cell:nth-child(3) { grid-row: 1 / span 2; }
+}
 
-  #webmention-form input[type="text"]::placeholder {
-    font-weight: normal;
-    color: inherit;
-  }
+.fp-cell {
+  padding: 2rem;
+  border-right: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
 
-  #webmention-form input[type="text"]:focus::placeholder {
-    color: transparent;
-  }
+.h-entry {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
-  #webmention-form button {
-    border: none;
-    background-color: transparent;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    padding: 0;
-    text-decoration: underline;
-  }
-  
-  #webmention-form button:hover {
-    cursor: default;
-    text-decoration: none;
-  }
-  
+.read-more {
+  margin-top: auto;
+}
+
+.single-page {
+  margin: 0 auto;
+  max-width: 720px;
+  max-width: 74ch;
+}

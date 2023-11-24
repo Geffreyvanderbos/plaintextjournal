@@ -1,52 +1,29 @@
 ---
-title: Geffrey van der Bos - Product Designer
+title: Plain Text
 layout: 'base.njk'
 ---
 
-<div class="pre-wrap">
-========================
-Geffrey van der Bos
-Digital Product Designer
-========================
-
-I've spent years crafting user-centric software and guiding teams in developing digital products. I am based in the Netherlands and share a vibrant life with my wife, Julia, and our Shiba Inu, Loki.
-
-<div class="nowrap">
-|--------+------------+-----------|<br>
-| <a href="/resume" title="Geffrey van der Bos his resume">Resume</a> | <a href="https://geffreyvanderbos.com" title="Geffrey his portfolio website">Portfolio</a> | <a href="https://pkm.social/@geffrey" title="Geffrey on the PKM.Social Mastodon Instance">Mastodon</a> |<br>
-|--------+------------+-----------|
+<div class="title">
+  <h1 class="title-heading">The Plaintext Journal</h1>
+  <div class="title-lead">We believe in the timeless essence of plain text as digital communication cornerstone.</div>
 </div>
-
-== Notes
-
-</div>
-<ul class="no-list-style">
-    {%- for note in collections.notes | reverse -%}
-    <li>
-        {%- if note.data.type == "replyto" %}
-            <article class="h-entry">
-                <h2 class="p-name prefix--reply-to">Replying to "<a href="{{ note.data.replyto }}">{{ note.data.title | safe }}"</a>{%- if note.data.mention %} by {{ note.data.mention }}{% endif -%}</h2>
-                <p class="e-content">{{ note.content | safe }}</p>
-                <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
-            </article>
-        <br><br><br>
-        {% elseif note.data.type == "likeof" -%}
-            <article class="h-entry"><p class="e-content">♥ I liked "<a href="{{ note.data.likeof }}" class="u-like-of">{{ note.data.likeoftitle }}</a>"{%- if note.data.likeofauthor %} by {{ note.data.likeofauthor }}{% endif -%}</p></article>
-            <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
-            <br><br><br>
-        {% else %}
-        <article class="h-entry">
-            <h2 class="p-name">=== {{ note.data.title | safe }}</h2>
-            <p class="e-content">{{ note.content | safe }}</p>
-            <a class="u-url" href="{{ note.url }}"><time class="dt-published">{{ note.date | asPostDate }}</time></a> 
-        </article>
-        <br><br><br>
-        {% endif -%} 
-    </li>
-    {% endfor %}
-</ul>
-
-<div class="pre-wrap">
-===============================
-This page is intentionally in plain text. Built to withstand the test of time.
+<div class="container">
+  <div class="frontpage">
+    <div class="fp-cell introduction">
+      {% include "./pages/introduction.njk" %}
+    </div>
+      {%- for article in collections.articles | reverse -%}
+      <div class="fp-cell">
+          <article class="h-entry">
+            <div class="fp-heading-excerpt">
+              <a class="u-url" href="{{ article.url }}">
+                  <h2 class="p-name">{{ article.data.title | safe }}</h2>
+              </a>
+              <p class="e-content">{{ article.data.page.excerpt }}</p>
+            </div>
+            <a class="u-url read-more" href="{{ article.url }}">[read more]</a>
+          </article> 
+      </div>
+      {% endfor %}
+    </div>
 </div>

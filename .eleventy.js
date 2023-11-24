@@ -2,6 +2,11 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
+    eleventyConfig.setFrontMatterParsingOptions({
+        excerpt: true,
+        excerpt_separator: "---"
+    })
+    
     eleventyConfig.addPassthroughCopy('./src/style.css');
     eleventyConfig.addPassthroughCopy('./src/assets');
     
