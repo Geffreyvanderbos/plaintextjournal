@@ -1,8 +1,11 @@
 ---
 title: Exporting Tasks from Things 3 Database to Plain Text Using Python
+date: 2023-12-03
 ---
 
-This guide will help you export your tasks from the [Things 3](https://culturedcode.com/things/) database on a Mac using a Python script. It'll export them either in Markdown or in [Todo.txt](https://todotxt.org/) syntax. For your safe-keeping.
+This guide will help you export your tasks from the Things 3 database on a Mac using a Python script. It'll export them either in Markdown or in Todo.txt syntax.
+
+---
 
 This guide is written for Things on MacOS. There is a way to [get your database on iOS or iPad](https://culturedcode.com/things/support/articles/2982272/#gqevu). However, I can't guarantee the script will work with it.
 
@@ -31,7 +34,7 @@ Make sure you have Python installed on your Mac. You can find instruction on [in
 
 ## Step 4: Using the Script
 1. When prompted, enter the path of your Things 3 database. If it's in the same directory, type `main.sqlite`.
-2. Choose the export format: type 1 for Markdown or 2 for todo.txt.
+2. Choose the export format: type 1 for Markdown or 2 for [Todo.txt](https://todotxt.org/).
 3. The script will connect to your database and export the tasks to a file named exported_tasks.txt in the same directory.
 
 ## Troubleshooting
