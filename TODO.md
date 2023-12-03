@@ -13,6 +13,7 @@
 - [ ] Add ReText for Linux in Reading and Writing Plain Text (Tools) (Thank you Anita Lewis)
 - [ ] Make RSS feed more clear, if functional at all
 - [ ] Add a proper 404 page.
-
+- [ ] 
+ 
 ## Article Ideas
 - [ ] Moving from proprietary systems to Plaintext
