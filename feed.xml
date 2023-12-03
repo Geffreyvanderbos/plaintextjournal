@@ -4,7 +4,7 @@
   <subtitle></subtitle>
   <link href="https://plaintextjournal.com/feed.xml" rel="self"/>
   <link href="https://plaintextjournal.com/"/>
-  <updated>2023-11-24T19:45:38Z</updated>
+  <updated>2023-12-03T16:20:12Z</updated>
   <id>https://plaintextjournal.com/</id>
   <author>
     <name>Geffrey van der Bos</name>
@@ -13,7 +13,7 @@
   <entry>
     <title>Managing and Synchronizing Plain Text Files Across Devices</title>
     <link href="https://plaintextjournal.com/articles/synchronizing-plain-text-files/"/>
-    <updated>2023-11-24T19:45:38Z</updated>
+    <updated>2023-12-03T16:20:12Z</updated>
     <id>https://plaintextjournal.com/articles/synchronizing-plain-text-files/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Whether you&#39;re using Windows, macOS, Android, iOS, or iPadOS, various tools and services can help keep your plain text files seamlessly updated and accessible.&lt;/p&gt;
 &lt;h2&gt;Cloud Storage Services for Cross-Platform Synchronization&lt;/h2&gt;
@@ -40,7 +40,7 @@
   <entry>
     <title>Reading and Writing Plain Text (Tools)</title>
     <link href="https://plaintextjournal.com/articles/reading-writing-plaintext/"/>
-    <updated>2023-11-24T19:45:38Z</updated>
+    <updated>2023-12-03T16:20:12Z</updated>
     <id>https://plaintextjournal.com/articles/reading-writing-plaintext/</id>
     <content xml:lang="en" type="html">&lt;p&gt;In this exploration, we look at a range of tools, from basic text editors to more advanced applications, including Obsidian, Emacs, and iA Writer, which can significantly improve your plain text experience.&lt;/p&gt;
 &lt;h2&gt;Basic Text Editors: The Foundation&lt;/h2&gt;
@@ -70,7 +70,7 @@
   <entry>
     <title>Markup Languages for Plain Text</title>
     <link href="https://plaintextjournal.com/articles/markup-languages-plain-text/"/>
-    <updated>2023-11-24T19:45:38Z</updated>
+    <updated>2023-12-03T16:20:12Z</updated>
     <id>https://plaintextjournal.com/articles/markup-languages-plain-text/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Markup languages for plain text are essential tools in document creation and formatting. Unlike HTML, which is primarily for web development, these languages are tailored for creating, formatting, and structuring a wide range of documents. Here&#39;s an overview of several key markup languages that are particularly useful for document-centric tasks.&lt;/p&gt;
 &lt;h2&gt;Markdown&lt;/h2&gt;
@@ -98,7 +98,7 @@ reStructuredText supports complex document structures and multiple output format
   <entry>
     <title>An Introduction to Plain Text</title>
     <link href="https://plaintextjournal.com/articles/introduction-plain-text/"/>
-    <updated>2023-11-24T19:45:38Z</updated>
+    <updated>2023-12-03T16:20:12Z</updated>
     <id>https://plaintextjournal.com/articles/introduction-plain-text/</id>
     <content xml:lang="en" type="html">&lt;p&gt;Plain text, in its fundamental form, has been a cornerstone of digital communication since the dawn of computing. Its origins trace back to the early days of computers when text was processed in simple formats. This was due to the limited capabilities of early computers, which could only handle basic text data.&lt;/p&gt;
 &lt;p&gt;The ASCII (American Standard Code for Information Interchange), developed in the 1960s, became a standard for representing text in computers, laying the foundation for what we know as plain text today.&lt;/p&gt;
@@ -114,7 +114,7 @@ reStructuredText supports complex document structures and multiple output format
   <entry>
     <title>Backing up and versioning your text files</title>
     <link href="https://plaintextjournal.com/articles/backup-plain-text-files/"/>
-    <updated>2023-11-24T19:45:38Z</updated>
+    <updated>2023-12-03T16:20:12Z</updated>
     <id>https://plaintextjournal.com/articles/backup-plain-text-files/</id>
     <content xml:lang="en" type="html">&lt;p&gt;In the realm of digital data management, backing up and versioning files, especially plain text files, are vital practices. The simplicity and versatility of plain text files offer unique advantages in these processes. This article emphasizes the importance of these practices, particularly through the lens of the 3-2-1 backup rule, while distinguishing them from mere synchronization.&lt;/p&gt;
 &lt;h2&gt;Understanding the 3-2-1 Backup Rule&lt;/h2&gt;
@@ -141,6 +141,48 @@ reStructuredText supports complex document structures and multiple output format
 &lt;p&gt;Automated Backup Scripts: Create scripts to automate the backup process, ensuring regular and consistent backups in line with the 3-2-1 rule.&lt;/p&gt;
 &lt;p&gt;Encryption for Security: Encrypting plain text files before backup adds an additional layer of security, essential for sensitive data.&lt;/p&gt;
 &lt;p&gt;Adhering to the 3-2-1 backup rule is essential in the digital landscape, and plain text files offer significant advantages due to their simplicity and compatibility. By strategically using diverse storage methods, ensuring offsite backups, and employing version control, you can effectively safeguard your plain text files. This approach ensures not just the preservation of your data but also its resilience in the face of potential digital calamities.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Exporting Tasks from Things 3 Database to Plain Text Using Python</title>
+    <link href="https://plaintextjournal.com/articles/Exporting%20Tasks%20from%20Things%203%20Database%20Using%20a%20Python%20Script/"/>
+    <updated>2023-12-03T16:20:12Z</updated>
+    <id>https://plaintextjournal.com/articles/Exporting%20Tasks%20from%20Things%203%20Database%20Using%20a%20Python%20Script/</id>
+    <content xml:lang="en" type="html">&lt;p&gt;This guide will help you export your tasks from the &lt;a href=&quot;https://culturedcode.com/things/&quot;&gt;Things 3&lt;/a&gt; database on a Mac using a Python script. It&#39;ll export them either in Markdown or in &lt;a href=&quot;https://todotxt.org/&quot;&gt;Todo.txt&lt;/a&gt; syntax. For your safe-keeping.&lt;/p&gt;
+&lt;p&gt;This guide is written for Things on MacOS. There is a way to &lt;a href=&quot;https://culturedcode.com/things/support/articles/2982272/#gqevu&quot;&gt;get your database on iOS or iPad&lt;/a&gt;. However, I can&#39;t guarantee the script will work with it.&lt;/p&gt;
+&lt;h2&gt;Step 1: Locating Your Things 3 Database&lt;/h2&gt;
+&lt;p&gt;Before you can use the script, you need to locate your Things 3 database:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Quit Things 3 app on your Mac.&lt;/li&gt;
+&lt;li&gt;Click on &#39;Finder&#39; in your Dock.&lt;/li&gt;
+&lt;li&gt;In the menu bar, select Go → Go to Folder.&lt;/li&gt;
+&lt;li&gt;Paste this path: ~/Library/Group Containers/JLMPQHK86H.com.culturedcode.ThingsMac/&lt;/li&gt;
+&lt;li&gt;Press the Return key.&lt;/li&gt;
+&lt;li&gt;Open the folder named ThingsData-xxxxx.&lt;/li&gt;
+&lt;li&gt;Copy (do not move) the Things Database.thingsdatabase to your desired location. Like your desktop. Or a custom folder in documents.&lt;/li&gt;
+&lt;li&gt;To access the database, CTRL + click on the bundle and select &#39;Show Package Contents&#39;. The file main.sqlite is your database.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(If you&#39;re using Things 3.13 or older, look for Things.sqlite3.)&lt;/p&gt;
+&lt;h2&gt;Step 2: Setting Up the Python Environment&lt;/h2&gt;
+&lt;p&gt;Make sure you have Python installed on your Mac. You can find instruction on &lt;a href=&quot;https://docs.python.org/3/using/mac.html&quot;&gt;installing Python here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Step 3: Running the Script&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Download the &lt;a href=&quot;https://raw.githubusercontent.com/Geffreyvanderbos/plaintextjournal/main/src/assets/things2plaintext.py&quot;&gt;things2plaintext.py script from here&lt;/a&gt;. I recommend saving it in the same directory as your main.sqlite.&lt;/li&gt;
+&lt;li&gt;Open your terminal.&lt;/li&gt;
+&lt;li&gt;Navigate (&lt;a href=&quot;https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html&quot;&gt;how?&lt;/a&gt;) to the directory where you saved the script.&lt;/li&gt;
+&lt;li&gt;Run the script by typing &lt;code&gt;python things2plaintext.py&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Step 4: Using the Script&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;When prompted, enter the path of your Things 3 database. If it&#39;s in the same directory, type &lt;code&gt;main.sqlite&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Choose the export format: type 1 for Markdown or 2 for todo.txt.&lt;/li&gt;
+&lt;li&gt;The script will connect to your database and export the tasks to a file named exported_tasks.txt in the same directory.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;If you encounter any errors, ensure that the database path is correct and that the right Python is installed. Raise &lt;a href=&quot;https://github.com/Geffreyvanderbos/plaintextjournal&quot;&gt;an issue on our Github&lt;/a&gt;, when you are stuck.&lt;/p&gt;
+&lt;p&gt;I hope this helped making your tasks more resistent to time.&lt;/p&gt;
+&lt;h2&gt;Contributing&lt;/h2&gt;
+&lt;p&gt;Feel free to improve upon the Python script. I know it can use it. Shoot a pull request on our Github repository.&lt;/p&gt;
 </content>
   </entry>
 </feed>
