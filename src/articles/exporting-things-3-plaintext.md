@@ -21,8 +21,6 @@ Before you can use the script, you need to locate your Things 3 database:
 7. Copy (do not move) the Things Database.thingsdatabase to your desired location. Like your desktop. Or a custom folder in documents.
 8. To access the database, CTRL + click on the bundle and select 'Show Package Contents'. The file main.sqlite is your database.
 
-(If you're using Things 3.13 or older, look for Things.sqlite3.)
-
 ## Step 2: Setting Up the Python Environment
 Make sure you have Python installed on your Mac. You can find instruction on [installing Python here](https://docs.python.org/3/using/mac.html).
 
